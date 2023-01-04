@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+
+import Navbar from "./component/Navbar";
+import Home from "./pages/Home";
+import Popular from './pages/Popular'
+import Trending from './pages/Trending'
+import Search from './pages/Search'
+import PageNotFound from './pages/PageNotFound'
+// import MovieCardLoader from './component/MovieCardLoader'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <div className="md:px-4 bg-primary-100">
+        {/* <MovieCardLoader /> */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/popular" element={<Popular />} />
+          <Route path="/trending" element={<Trending />} />
+          <Route path="/search" element={<Search />} />
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
+      </div>
+    </>
   );
 }
 
