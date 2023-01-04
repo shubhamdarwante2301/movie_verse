@@ -11,7 +11,7 @@ const TempNavbar = () => {
     <div className="sticky top-0 left-0 z-20 w-full sm:border-b-4">
       <div className="flex sm:flex-row flex-col bg-primary-200 text-white p-1 relative">
         <div className="p-3 text-2xl cursor-pointer sm:border-none border-b-2 border-slate-300">
-          <Link to="/">Movie Verse</Link>
+          <Link to="/movie_verse">Movie Verse</Link>
         </div>
         <div
           onClick={toggleNavbar}

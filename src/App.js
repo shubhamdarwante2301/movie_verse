@@ -19,8 +19,8 @@ function App() {
           <Route path="/popular" element={<Popular />} />
           <Route path="/trending" element={<Trending />} />
           <Route path="/search" element={<Search />} />
-          <Route path="*" element={<Home />} />
-          {/* <Route path="*" element={<PageNotFound />} /> */}
+          {/* <Route path="*" element={<Home />} /> */}
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </div>
     </>
