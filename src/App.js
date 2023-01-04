@@ -15,7 +15,7 @@ function App() {
       <div className="md:px-4 bg-primary-100">
         {/* <MovieCardLoader /> */}
         <Routes>
-          <Route path="/movie_verse" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/popular" element={<Popular />} />
           <Route path="/trending" element={<Trending />} />
           <Route path="/search" element={<Search />} />
